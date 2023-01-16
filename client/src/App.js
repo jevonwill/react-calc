@@ -1,11 +1,11 @@
 import React from 'react';
 import Nav from './comps/Nav';
-import QuotePage from './pages/QuotePage';
+import Home from './pages/Home';
 
 function App() {
   return (
     <React.StrictMode>
-      <QuotePage />
+      <Home />
     </React.StrictMode>
 
   );
