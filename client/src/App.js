@@ -1,27 +1,13 @@
-import logo from './logo.svg';
 import React from 'react';
-import './App.css';
-import Nav from './components/Nav';
-import Members from './pages/Members';
-import Home from './pages/Home';
-function App() {
-  {/* Defines routing */}
+import Nav from './comps/Nav';
+import QuotePage from './pages/QuotePage';
 
-  let Page
-    switch (window.location.pathname) {
-        case "/":
-            Page = Home
-            break
-        case "/members":
-            Page = Members
-            break
-   }
-    
+function App() {
   return (
     <React.StrictMode>
-      <Nav />
-      <Page />
+      <QuotePage />
     </React.StrictMode>
+
   );
 }
 
