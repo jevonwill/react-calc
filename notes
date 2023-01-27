@@ -1,11 +1,19 @@
 ###React calc
 
 1: Design in flexbox/grid.
-	Basic navbar
-	Center area with calc
-	area below calc to show results/reset button
+	Basic navbar - Done
+	Center area with calc - Done
+	area below calc to show results/reset button - Done
 
 2: Wireup JS
+	Create basic add/sub/divide/multiply funcs
+		May need to factor in multiple params, use ...rest
+	Create a new func operate(), that takes an operatetor func, 2 numbers and calls one of the previous funcs.
+	Create function to populate display when you click the number buttons. Store the value that should be in a var.
+	Store the first number that is input when an operator is pressed.
+	Save the operation that was chosen.
+	Operate() on the inputs once the user hits equals.
+
 
 3: Once working move to React
 
