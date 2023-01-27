@@ -1,0 +1,22 @@
+###React calc
+
+1: Design in flexbox/grid.
+	Basic navbar
+	Center area with calc
+	area below calc to show results/reset button
+
+2: Wireup JS
+
+3: Once working move to React
+
+4: Once in React, create user login/register functionality
+	Users can save the results of their calculations.
+	MySQL DB to hold user data.
+
+5: Containerize application
+	For fun lets use NGINX to serve the client app
+	Express backend running on its own container for login/register 
+	MySQL container
+
+6: Migrate to Kubernetes
+	Have the application running across 3 pods/clusters/whatevers
