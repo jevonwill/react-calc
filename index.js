@@ -35,6 +35,7 @@ const six = document.querySelector('#six');
 const seven = document.querySelector('#seven');
 const eight = document.querySelector('#eight');
 const nine = document.querySelector('#nine');
+const plus = document.querySelector('#plus');
 
 
 //Settings input & displays vars to 0
@@ -52,7 +53,22 @@ one.addEventListener('click', () => {
 	setDisplay(1);
 });
 
-//let operation = function(){
-//	lastInput = displayNum;
+two.addEventListener('click', () => {
+	setDisplay(2);
+});
+
+
+plus.addEventListener('click', () => {
+	operation(add);
+});
+
+//Click the plus sign should return 2 if you click the 'One' button, more than once
+
+let operation = function(x){
+	lastInput = displayNum;
+	let operator = x;
+	console.log(operator(lastInput,displayNum));
+};
+
 	
 console.log(displayNum);
