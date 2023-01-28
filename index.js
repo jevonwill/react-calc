@@ -23,4 +23,15 @@ const operate = function(operator, a, b){
 	return result;
 };
 
-console.log(operate(divide, 2, 2));
+let lastInput = 0;
+let displayNum = 0;
+
+let setDisplay = function(x){
+	displayNum = x;
+};
+
+
+let operation = function(){
+	lastInput = displayNum;
+	
+console.log(displayNum);

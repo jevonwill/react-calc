@@ -6,25 +6,25 @@
 	area below calc to show results/reset button - Done
 
 2: Wireup JS
-	Create basic add/sub/divide/multiply funcs
+	Create basic add/sub/divide/multiply funcs - Done
 		May need to factor in multiple params, use ...rest
-	Create a new func operate(), that takes an operatetor func, 2 numbers and calls one of the previous funcs.
+	Create a new func operate(), that takes an operatetor func, 2 numbers and calls one of the previous funcs. - Done
 	Create function to populate display when you click the number buttons. Store the value that should be in a var.
+		Refactor to use event listener instead of onclick.  Better way to call multiple functions instead of onclick()
 	Store the first number that is input when an operator is pressed.
 	Save the operation that was chosen.
 	Operate() on the inputs once the user hits equals.
 
 
 3: Once working move to React
-
-4: Once in React, create user login/register functionality
+	Once in React, create user login/register functionality
 	Users can save the results of their calculations.
 	MySQL DB to hold user data.
 
-5: Containerize application
+4: Containerize application
 	For fun lets use NGINX to serve the client app
 	Express backend running on its own container for login/register 
 	MySQL container
 
-6: Migrate to Kubernetes
+5: Migrate to Kubernetes
 	Have the application running across 3 pods/clusters/whatevers
