@@ -41,3 +41,68 @@ const backButton = document.querySelectorAll('backButton')
 const decimalButton = document.querySelectorAll('decimalButton');
 
 //Loops through buttons, adding events listeners
+numButtons.forEach((button) =>{
+	button.addEventListener('click', intFunction)
+});
+
+
+//Functions to take input from buttons
+function goBack(){
+	if (!int1Done) {
+		int1 = int1.slice(0, int1.length - 1);
+		result.textContent = int1;
+	}
+	else {
+		int2 = int2.slice(0, int2.length - 1);
+		result.textContent = int2;
+
+	}
+}
+
+function addDecimal() {
+	if (!decimal) {
+		if (!int1Done) {
+				int1 += this.textContent;
+				result.textContent = int1;
+				decimal = true;
+		}
+		else {
+				int2 += this.textContent;
+				result.textContent = int2;
+				decimal = true;
+		}
+	}
+	else (return; )
+}
+
+function intFunction() {
+	if(!int1Done) {
+		if (omt1.length > 11) {return; }
+		else
+		 {
+			int1 += this.textContent;
+			result.textContent = int1;
+		 }
+	}
+	else {
+		if (int2.length > 11) {return; }
+		else {
+			int2 += this.textContent;
+			result.textContent = int2;
+		}
+	}
+};
+
+function opFunction() {
+	if (!int1Done) {
+		op = this.textContent;
+		int1Done = true;
+		decimal = false;
+	}
+	else {
+		operate();
+		op = this.textContent;
+		int1 = total;
+		int2 = "";	
+	}
+};
