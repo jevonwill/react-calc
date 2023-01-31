@@ -18,37 +18,44 @@
 		
 		<div class="calc">
 			<div class="buttonRow">
-				<button class="button operator plus" id="plus">+</button>
-				<button class="button" id="one">1</button>
-				<button class="button" id="6">6</button>
+				<button class="opButton" data-key="107">+</button>
+				<button class="numButton" data-key="97">1</button>
+				<button class="numButton" data-key="102">6</button>
 			</div>
 			<div class="buttonRow">
-				<button class="button operator" id="minus">-</button>
-				<button class="button" id="two">2</button>
-				<button class="button" id="seven">7</button>
+				<button class="opButton" data-key="109">-</button>
+				<button class="numButton" data-key="98">2</button>
+				<button class="numButton" data-key="103">7</button>
 			</div>
 			<div class="buttonRow">
-				<button class="button operator" id="star">*</button>
-				<button class="button" id="three">3</button>
-				<button class="button" id="eight">8</button>
+				<button class="opButton" data-key="106">*</button>
+				<button class="numButton" data-key="99">3</button>
+				<button class="numButton" data-key="104">8</button>
 			</div>
 			<div class="buttonRow">
-				<button class="button operator" id="division">÷</button>
-				<button class="button" id="four">4</button>
-				<button class="button" id="nine">9</button>
+				<button class="opButton" data-key="111">÷</button>
+				<button class="numButton" data-key="100">4</button>
+				<button class="numButton" data-key="105">9</button>
 			</div>
 			<div class="buttonRow">
-				<button class="button operator" id="equals">=</button>
-				<button class="button" id="five">5</button>
-				<button class="button" id="zero">0</button>
+				<button class="opButton" id="calculateButton" data-key="13">=</button>
+				<button class="numButton" data-key="101">5</button>
+				<button class="numButton" data-key="96">0</button>
 			</div>
+			<div class="buttonRow">
+				<button class="opButton" id="backButton" data-key="8" data-key="67">Back</button>
+				<button class="opButton" data-key="16">%</button>
+				<button class="opButton" id="decimalButton" data-key="110">.</button>
+			</div>	
 		</div>
 		<div class="results">
 			<div class=result-buttons>
 				<button>Save Results</button>
-				<button>Reset</button>
+				<button id="resetButton" data-key="46" data-key="65">Reset</button>
 			</div>
-			<div class="result-text">20</div>
+			<div id="result-holder" >
+				<p id="result-text">20 </p>
+			</div>
 		</div>
 	</div>
 </body>

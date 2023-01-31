@@ -24,51 +24,20 @@ const operate = function(operator, a, b){
 	return result;
 };
 
-//Selectors for buttons
-const zero = document.querySelector('#zero');
-const one = document.querySelector('#one');
-const two = document.querySelector('#two');
-const three = document.querySelector('#three');
-const four = document.querySelector('#four');
-const five = document.querySelector('#five');
-const six = document.querySelector('#six');
-const seven = document.querySelector('#seven');
-const eight = document.querySelector('#eight');
-const nine = document.querySelector('#nine');
-const plus = document.querySelector('#plus');
+//Declaring vars
+let int1 = "";
+let int2 = "";
+let total;
+let int1Done = false;
+let op = "";
+let decimal = false;
 
+const numButtons = document.querySelectorAll('numButton');
+const opButtons = document.querySelectorAll('opButton');
+const calculateButton = document.querySelectorAll('calculateButton');
+const result = document.querySelectorAll('result-text');
+const resetButton = document.querySelectorAll('resetButton');
+const backButton = document.querySelectorAll('backButton')
+const decimalButton = document.querySelectorAll('decimalButton');
 
-//Settings input & displays vars to 0
-let lastInput = 0;
-let displayNum = 0;
-
-//Func to set display as the value pressed.
-let setDisplay = function(x){
-	displayNum = x;
-};
-
-
-//Events Listeners
-one.addEventListener('click', () => {
-	setDisplay(1);
-});
-
-two.addEventListener('click', () => {
-	setDisplay(2);
-});
-
-
-plus.addEventListener('click', () => {
-	operation(add);
-});
-
-//Click the plus sign should return 2 if you click the 'One' button, more than once
-
-let operation = function(x){
-	lastInput = displayNum;
-	let operator = x;
-	console.log(operator(lastInput,displayNum));
-};
-
-	
-console.log(displayNum);
+//Loops through buttons, adding events listeners
